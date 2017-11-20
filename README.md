@@ -6,7 +6,7 @@
 
 ##### Props
 
-Neither prop is required. Label defaults to null and selected defaults to false;
+Neither prop is required. Label defaults to `null` and selected defaults to `false`
 
 | Property | Type | Description
 :---|:---|:---
