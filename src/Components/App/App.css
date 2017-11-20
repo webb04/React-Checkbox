@@ -1,0 +1,43 @@
+.App {
+  text-align: center;
+  height: 100%;
+}
+
+svg {
+  overflow: visible;
+}
+
+header {
+  padding: 20px 0px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.12);
+}
+
+.App-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 120px);
+}
+
+.path {
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: dash 3s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 400;
+    fill: #fff;
+  }
+  80% {
+    stroke-dashoffset: 0;
+    fill: #fff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #9012FE;
+  }
+}

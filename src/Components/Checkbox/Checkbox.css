@@ -1,0 +1,50 @@
+.Checkbox-wrapper {
+  display: inline-block;
+  margin: 30px 0px;
+  margin-left: -50px;
+}
+
+.Checkbox-wrapper:hover {
+  cursor: pointer;
+}
+
+.Checkbox {
+  box-shadow: inset 0 0 0 2px #e0e6ed;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.Checkbox:after {
+  transform: scale(0);
+  background-size: 100%;
+  content: '';
+  transition-delay: 150ms;
+  background: url('../../Static/tick.svg') center center no-repeat;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  transition-delay: 150ms;
+  transition-timing-function: cubic-bezier(0, 0.89, 0.44, 1);
+  transition-duration: 300ms;
+  transition-property: all;
+}
+
+.Checkbox.selected {
+  box-shadow: inset 0 0 0 20px #9012FE;
+  opacity: 1;
+}
+
+.Checkbox.selected:after {
+  transform: scale(1);
+}
+
+.label {
+  line-height: 30px;
+  vertical-align: top;
+  padding-left: 20px;
+  width: 50px;
+  position: absolute;
+}
