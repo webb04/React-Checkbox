@@ -1,4 +1,29 @@
-## Available Scripts
+# React Checkbox
+
+```js
+<Checkbox label='React' selected={true}/>
+```
+
+##### Props
+
+Neither prop is required. Label defaults to null and selected defaults to false;
+
+| Property | Type | Description
+:---|:---|:---
+| `label` | string | The text label to accompany the checkbox |
+| `selected` | boolean | This Property tells the component to start as selected or not |
+
+
+## To Run
+- npm install
+- npm start
+- http://localhost:3000/
+
+## To Test
+- npm run test
+
+
+## Available Scripts (Create React App)
 
 In the project directory, you can run:
 
